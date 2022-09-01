@@ -41,6 +41,7 @@ public class Evaluator {
                 }
             }
             case EXIT -> {
+                System.exit(1);
             }
             default -> throw new IllegalStateException("Unexpected value: " + map.get("Command"));
         }
